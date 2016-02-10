@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http:// xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
-	<display-name>simple-web-app</display-name>
+	<display-name>sa</display-name>
 
-	<module-name>simple-web-app</module-name>
+	<module-name>sa</module-name>
 
 	<session-config>
 		<session-timeout>30</session-timeout>
