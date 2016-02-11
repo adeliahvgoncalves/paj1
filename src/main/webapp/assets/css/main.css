@@ -84,7 +84,7 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    font-family: 'Yanone Kaffeesatz', arial, serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -159,7 +159,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    font-family: Yanone Kaffeesatz;
     font-weight: 300;
     color: #333;
 }
@@ -191,7 +191,7 @@ em {
 pre {
     background: #ebebeb;
     border: none;
-    font-family: "Monaco";
+    font-family: "Yanone Kaffeesatz, arial, serif";
     font-size: 16px;
     color: #666;
     padding: 20px;
