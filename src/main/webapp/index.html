@@ -2,8 +2,71 @@
 <html lang="en">
 <head>
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+
+
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
+	rel='stylesheet' type='text/css'>
+<link href="justified-nav.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/icomoon.css">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css" media="screen">
+.nav-justified {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size: 2.5em;
+	color: #000000;
+	height: 80px;
+	width: 1140px;
+}
+
+.nav-justified>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	width: 228px;
+	background-color: #FFFFFF; /* Old browsers */
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	background-repeat: repeat-x; /* Repeat the gradient */
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.nav-justified>li>a:hover {
+	color: #ff254b;
+}
+
+.container {
+	height: 100px;
+	width:1170px;
+}
+
 p {
 	font-size: 14px;
 	color: black;
@@ -24,92 +87,26 @@ h3 {
 .mycontent-left {
 	border-right: 1px dashed #333;
 }
-</style>
 
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/icomoon.css">
-<link href="assets/css/animate-custom.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
-	rel='stylesheet' type='text/css'>
-
-<!--     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'> -->
-<!--     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> -->
-
-<script src="assets/js/jquery.min.js"></script>
-
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-<style>
 h1 {
 	font-family: 'Yanone Kaffeesatz', arial, serif;
+	color:#ff254b;
 }
 </style>
+
 </head>
-
-
 
 <body data-spy="scroll" data-offset="0">
 
-<<<<<<< HEAD
-	<div id="navbar-main"></div>
-=======
-	<div id="navbar-main">
-		<!-- Fixed navbar -->
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target=".navbar-collapse">
-						<span class="icon icon-shield"
-							style="font-size: 30px; color: #3498db;"></span>
-					</button>
-					<a class="navbar-brand hidden-xs hidden-sm" href="#home"><span
-						class="icon icon-shield" style="font-size: 18px; color: #3498db;"></span></a>
-				</div>
 
-				<!-- 				<div class="dropdown"> -->
-				<!-- 					<a data-toggle="dropdown" href="#">Show Links <b class="caret"></b></a> -->
-				<!-- 					<ul class="dropdown-menu" role="menu"> -->
-				<!-- 						<li><a href="#">First Link</a></li> -->
-				<!-- 						<li><a href="#">Second Link</a></li> -->
-				<!-- 						<li role="presentation" class="divider"></li> -->
-				<!-- 						<li><a href="#">Third Link</a></li> -->
-				<!-- 					</ul> -->
-				<!-- 				</div> -->
-
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<!--      botoes e links da barra de tarefas      -->
-						<li><a href="http://abola.pt">News</a></li>
-						<li><a href="artista/listaartistas.html">Artists</a></li>
-						<li><a href="">Program</a></li>
-						<li><a href="">Tickets</a></li>
-						<li><a href="">Contacts</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	<div id="container1"></div>
+	<div class="container">
+		<div id="menu"></div>
 	</div>
-
->>>>>>> origin/master
-
 	<div class="w3-container" style="width: 100%; border: 0; height: 75px"></div>
 
 	<iframe src="banner/banner.html"
-		style="width: 75%; border: 0; height: 400px" class="center-block"></iframe>
+		style="width: 75%; border: 0; height: 300px" class="center-block"></iframe>
 
 
 	<div class="container" id="portfolio" name="portfolio">
@@ -118,66 +115,6 @@ h1 {
 		<h1 class="centered">NEWS</h1>
 	</div>
 
-<<<<<<< HEAD
-
-		<!-- ****************************************************************************** -->
-		<div class="container">
-			<div class="row">
-
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-3 ">
-
-					<div class="grid mask">
-						<a href="http://abola.pt"> <img
-							src="//assets.primaverasound.com/images/destacadas/dulliedit_20151204141653.jpg"
-							alt="">
-							<h3>GREG DULLI</h3>
-							<p>“An Evening With Greg Dulli” is the name of this American
-								artist’s new tour, during which he will perform tracks from his
-								prolific past as well as some new songs. Dulli started in the
-								music business fronting The Afghan Whigs, one of the key bands
-								of the 90s. After the band split at the end of that decade, Greg
-								formed The Twilight Singers and he collaborated with his close
-								friend Mark Lanegan in The Gutter Twins.</p>
-						</a>
-					</div>
-					<!-- /grid-mask -->
-
-				</div>
-				<!-- /col -->
-
-
-				<!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
-
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-					aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true">×</button>
-								<h4 class="modal-title">Project Title</h4>
-							</div>
-							<div class="modal-body">
-								<p>
-									<img class="img-responsive"
-										src="//assets.primaverasound.com/images/destacadas/unnamed_20160120210732.jpg"
-										alt="">
-								</p>
-								<p>This project was crafted for Some Name corp. Detail here
-									a little about your job requirements and the tools used. Tell
-									about the challenges faced and what you and your team did to
-									solve it.</p>
-								<p>
-									<b><a href="#">Visit Site</a></b>
-								</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default"
-									data-dismiss="modal">Close</button>
-							</div>
-=======
 	<!-- ****************************************************************************** -->
 	<div class="container">
 		<div class="row">
@@ -199,7 +136,6 @@ h1 {
 								that decade, Greg formed The Twilight Singers and he
 								collaborated with his close friend Mark Lanegan in The Gutter
 								Twins.</p>
->>>>>>> origin/master
 						</div>
 					</a>
 				</div>
@@ -257,99 +193,7 @@ h1 {
 						</div>
 					</a>
 				</div>
-<<<<<<< HEAD
 
-				<div class="col-md-3 ">
-					<div class="grid mask">
-						<a href="http://record.pt"> <img
-							src="//assets.primaverasound.com/images/destacadas/unnamed_20160120210732.jpg"
-							alt="">
-							<h3>GREG DULLI</h3>
-							<p>“The distribution of artists and confirmed bands by day
-								for the next edition of Primavera Sound in Barcelona is now
-								available. Check out the concerts that will take place from
-								Monday 30th May to Sunday 5th June at different venues of the
-								festival."</p>
-						</a>
-					</div>
-					<!-- /grid-mask -->
-				</div>
-
-
-
-				<!-- PORTFOLIO IMAGE 4 -->
-				<div class="row">
-					<div class="col-md-4 ">
-						<div class="grid mask">
-							<figure>
-								<img class="img-responsive"
-									src="assets/img/portfolio/folio04.jpg" alt="">
-								<figcaption>
-									<h5>PROFILE</h5>
-									<a data-toggle="modal" href="#myModal"
-										class="btn btn-primary btn-lg">Take a Look</a>
-								</figcaption>
-								<!-- /figcaption -->
-							</figure>
-							<!-- /figure -->
-						</div>
-						<!-- /grid-mask -->
-					</div>
-					<!-- /col -->
-
-					<!-- PORTFOLIO IMAGE 5 -->
-					<div class="col-md-4">
-						<div class="grid mask">
-							<figure>
-								<img class="img-responsive"
-									src="assets/img/portfolio/folio05.jpg" alt="">
-								<figcaption>
-									<h5>TWITTER STATUS</h5>
-									<a data-toggle="modal" href="#myModal"
-										class="btn btn-primary btn-lg">Take a Look</a>
-								</figcaption>
-								<!-- /figcaption -->
-							</figure>
-							<!-- /figure -->
-						</div>
-						<!-- /grid-mask -->
-					</div>
-					<!-- /col -->
-
-					<!-- PORTFOLIO IMAGE 6 -->
-					<div class="col-md-4">
-						<div class="grid mask">
-							<figure>
-								<img class="img-responsive"
-									src="assets/img/portfolio/folio06.jpg" alt="">
-								<figcaption>
-									<h5>PHONE MOCKUP</h5>
-									<a data-toggle="modal" href="#myModal"
-										class="btn btn-primary btn-lg">Take a Look</a>
-								</figcaption>
-								<!-- /figcaption -->
-							</figure>
-							<!-- /figure -->
-						</div>
-						<!-- /grid-mask -->
-					</div>
-					<!-- /col -->
-				</div>
-				<!-- /row -->
-				<br> <br>
-			</div>
-			<!-- /row -->
-		</div>
-
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				//load partials
-				$("#navbar-main").load("banner/menubar.htlm");
-				
-=======
 				<div class="mycontent-left"></div>
 				<!-- /grid-mask -->
 
@@ -474,10 +318,18 @@ h1 {
 			</h4>
 		</div>
 	</div>
->>>>>>> origin/master
 
-			});
-		</script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//load partials
+			$("#container1").load("banner/head.html");
+			$("#menu").load("banner/menu.html");
+		});
+	</script>
+
 </body>
 
 </html>
