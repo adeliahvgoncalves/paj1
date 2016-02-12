@@ -1,19 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
+	rel='stylesheet' type='text/css'>
+<link href="../justified-nav.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/icomoon.css">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-<style>
-<
+
+<style type="text/css" media="screen">
+.nav-justified {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size: 1.5em;
+	color: #000000;
+	height: 80px;
+	width: 1110px;
+}
+
+.nav-justified>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	width: 185;
+	background-color: #FFFFFF; /* Old browsers */
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	background-repeat: repeat-x; /* Repeat the gradient */
+	border-bottom: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+}
+
+.nav-justified>li>a:hover {
+	color: #ff254b;
+}
+
+.container {
+	height: 100px;
+	width:1170px;
+}
 style type ="text/css">#wrap {
 	width: 600px;
 	border-top-color: rgb(255, 37, 75);
@@ -33,11 +82,17 @@ style type ="text/css">#wrap {
 	text-align: center;
 	width: 500px;
 }
+h1 {
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	color:#ff254b;
+}
 </style>
 
 
 <body data-spy="scroll" data-offset="0">
+
 <div id="container1"></div>
+	
 	<div class="container">
 		<div id="menu"></div>
 	</div>
@@ -65,16 +120,14 @@ style type ="text/css">#wrap {
 
 
 	
-
-
-		<script
+<script
 			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script>
 		$(document).ready(function() {
 			//load partials
-			$("#container1").load("banner/head.html");
-			$("#menu").load("banner/menu.html");
+			$("#container1").load("../banner/head.html");
+			$("#menu").load("../banner/menu.html");
 		});
 	</script>
 </body>
