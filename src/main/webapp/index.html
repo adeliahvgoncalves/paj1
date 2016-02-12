@@ -2,8 +2,71 @@
 <html lang="en">
 <head>
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+
+
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
+	rel='stylesheet' type='text/css'>
+<link href="justified-nav.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/icomoon.css">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css" media="screen">
+.nav-justified {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size: 2.5em;
+	color: #000000;
+	height: 80px;
+	width: 1140px;
+}
+
+.nav-justified>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	width: 228px;
+	background-color: #FFFFFF; /* Old browsers */
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	background-repeat: repeat-x; /* Repeat the gradient */
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.nav-justified>li>a:hover {
+	color: #ff254b;
+}
+
+.container {
+	height: 100px;
+	width:1170px;
+}
+
 p {
 	font-size: 14px;
 	color: black;
@@ -24,91 +87,27 @@ h3 {
 .mycontent-left {
 	border-right: 1px dashed #333;
 }
-</style>
 
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/icomoon.css">
-<link href="assets/css/animate-custom.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
-	rel='stylesheet' type='text/css'>
-
-<!--     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'> -->
-<!--     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> -->
-
-<script src="assets/js/jquery.min.js"></script>
-
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-<style>
 h1 {
 	font-family: 'Yanone Kaffeesatz', arial, serif;
+	color:#ff254b;
 }
 </style>
+
 </head>
-
-
 
 <body data-spy="scroll" data-offset="0">
 
-	<div id="navbar-main"></div>
-=======
-	<div id="navbar-main">
-		<!-- Fixed navbar -->
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target=".navbar-collapse">
-						<span class="icon icon-shield"
-							style="font-size: 30px; color: #3498db;"></span>
-					</button>
-					<a class="navbar-brand hidden-xs hidden-sm" href="#home"><span
-						class="icon icon-shield" style="font-size: 18px; color: #3498db;"></span></a>
-				</div>
 
-				<!-- 				<div class="dropdown"> -->
-				<!-- 					<a data-toggle="dropdown" href="#">Show Links <b class="caret"></b></a> -->
-				<!-- 					<ul class="dropdown-menu" role="menu"> -->
-				<!-- 						<li><a href="#">First Link</a></li> -->
-				<!-- 						<li><a href="#">Second Link</a></li> -->
-				<!-- 						<li role="presentation" class="divider"></li> -->
-				<!-- 						<li><a href="#">Third Link</a></li> -->
-				<!-- 					</ul> -->
-				<!-- 				</div> -->
 
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<!--      botoes e links da barra de tarefas      -->
-						<li><a href="http://abola.pt">News</a></li>
-						<li><a href="artista/listaartistas.html">Artists</a></li>
-						<li><a href="">Program</a></li>
-						<li><a href="">Tickets</a></li>
-						<li><a href="">Contacts</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	<div id="container1"></div>
+	<div class="container">
+		<div id="menu"></div>
 	</div>
-
->>>>>>> origin/master
-
 	<div class="w3-container" style="width: 100%; border: 0; height: 75px"></div>
 
-	<iframe src="banner/banner.html"
-		style="width: 75%; border: 0; height: 250px" class="center-block"></iframe>
+	<iframe src="banner/banner.html" style="width: 75%; border: 0; height: 450px" class="center-block"></iframe>
+
 
 
 	<div class="container" id="portfolio">
@@ -116,7 +115,6 @@ h1 {
 		<h1 class="centered">NEWS</h1>
 	</div>
 
-				
 
 	<!-- ****************************************************************************** -->
 	<div class="container">
@@ -139,7 +137,6 @@ h1 {
 								that decade, Greg formed The Twilight Singers and he
 								collaborated with his close friend Mark Lanegan in The Gutter
 								Twins.</p>
-
 						</div>
 					</a>
 				</div>
@@ -197,6 +194,12 @@ h1 {
 						</div>
 					</a>
 				</div>
+
+
+				<div class="mycontent-left"></div>
+				<!-- /grid-mask -->
+
+
 			</div>
 
 				<div class="col-md-3 ">
@@ -315,8 +318,17 @@ h1 {
 	</div>
 
 
-			});
-		</script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//load partials
+			$("#container1").load("banner/head.html");
+			$("#menu").load("banner/menu.html");
+		});
+	</script>
+
 </body>
 
 </html>
