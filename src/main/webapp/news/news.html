@@ -5,7 +5,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://w.soundcloud.com/player/api.js"></script>
+<script>
+   $(document).ready(function() {
+     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+     widget.bind(SC.Widget.Events.READY, function() {
+       console.log('Ready...');
+     });
+     $('button').click(function() {
+       widget.toggle();
+     });
+   });
+  </script>
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
@@ -15,9 +28,9 @@
 <link href="assets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/icomoon.css">
 <link href="assets/css/animate-custom.css" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
@@ -61,9 +74,10 @@
 
 .container {
 	height: 100px;
-	width:1170px;
+	width: 1170px;
 }
-style type ="text/css">#wrap {
+
+style type ="text /css">#wrap {
 	width: 600px;
 	border-top-color: rgb(255, 37, 75);
 	margin: 0 auto;
@@ -82,48 +96,77 @@ style type ="text/css">#wrap {
 	text-align: center;
 	width: 500px;
 }
+
 h1 {
 	font-family: 'Yanone Kaffeesatz', arial, serif;
-	color:#ff254b;
+	color: #ff254b;
+}
+
+.size {
+	width: 950px;
+	height: 300px;
+}
+
+hr {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 50px auto;
+	width: 75%;
+	clear: both;
+	border: none;
+	border-top: 3px solid red;
+	border-bottom: 10px solid none;
+	font-size: 1px;
+	line-height: 0;
+	overflow: invisible;
 }
 </style>
-
-
 <body data-spy="scroll" data-offset="0">
 
-<div id="container1"></div>
-	
+	<div id="container1" class="center-block" style="width:950px"></div>
+
 	<div class="container">
 		<div id="menu"></div>
 	</div>
 
+	<div class="center-block size" style="margin-bottom: 100px">
+		<img
+			src="http://i.telegraph.co.uk/multimedia/archive/02209/coach_2209913b.jpg"
+			class="image-responsive size">
+		<hr>
+	</div>
 
-<h1 style="text-align:center;">Program</h1>
-<h2 style="text-align:center;">03 June</h2>
-<div id="wrap">
-    <div id="left_col">
-        
-  <h3>Radiohead</h3>
-   <br>
-         <hr width=60% color=#ff254b>
-  <br>
-  <h3>Mogway</h3>
-  </div>
-    </div>
-    <div id="right_col">
-         <h3>Royal Blood</h3>
-          <br>
-         <hr width=60% color=#ff254b>
-  <br>
-  <h3>Dinosaur Jr</h3>
-    </div>
+	<div class="container size">
+		<div class="row">
+
+			<div class="col-md-8 " style="">
+				<h3>LINE UP CONCLUDED</h3>
+				<br>
+				<p>babbababababbab</p>
+
+			</div>
+
+			<div class="col-md-4 " style="">
+				<iframe id="soundcloud_widget"
+					src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/39804767&show_artwork=false&liking=false&sharing=false&auto_play=true"
+					frameborder="no"></iframe>
+			</div>
+		</div>
+	</div>
 
 
-	
-<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script>
+
+
+
+
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
 		$(document).ready(function() {
 			//load partials
 			$("#container1").load("../banner/head.html");
