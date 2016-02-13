@@ -121,19 +121,22 @@ border: 0px solid transparent;
 
 
 hr {
-    position: relative;
-    border: none;
+      display: block;
+position: relative;
+padding: 0;
+margin: 8px auto;
+width: 100%;
+clear: both;
+border: none;
+border-top: 1px solid #AAA;
+border-bottom: 1px solid #FFF;
+font-size: 1px;
+line-height: 0;
+overflow: invisible;
+
 }
 
-hr:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    height: 2px;
-    background: #ccc;
-}
+
 
 a img {
     background: white;
