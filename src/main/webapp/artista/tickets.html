@@ -6,26 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
 	rel='stylesheet' type='text/css'>
-<link href="../justified-nav.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link href="assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/icomoon.css">
-<link href="assets/css/animate-custom.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link href="../assets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
 <style type="text/css" media="screen">
@@ -96,23 +85,45 @@ h3{
    padding-top: 20px;
   
 }
+
+hr {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 50px auto;
+	width: 75%;
+	clear: both;
+	border: none;
+	border-top: 3px solid red;
+	border-bottom: 10px solid none;
+	font-size: 1px;
+	line-height: 0;
+	overflow: invisible;
+}
+
 </style>
 
 
 
 <body data-spy="scroll" data-offset="0">
 
-<div id="container1" class="center-block" style="width: 1130px"></div>
-	<div class="container" align="center">
+<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666"></div>
+	<div class="container" align="center" style="margin-top: 89px">
 		<div id="menu"></div>
 	</div>
 
 
-<h1 style="text-align:center;">Tickets</h1>
-<br>
-<div class="center-block"> <p>MAdelia SOUND 16 DAY TICKETS:></p>
-<p>- Until the festival: 80€ or until sold out</p>
-<p>- Box office: 90€ (in case of sold out at the previous batch there won't be available at box office)</p>
+<h1 style="text-align:center;">Day Tickets</h1>
+<hr>
+
+<div class="container" align="center"> 
+<ul style="list-style-type:none">
+  <li>Until the festival: 80€ or until sold out</li>
+  <li>Box office: 90€ (in case of sold out at the previous batch there won't be available at box office)
+  	</li>
+ 
+</ul>
+
 <p>The tickets can be bought physically until they sell out in MAdelia Sound 16 store (Avenida Variante,13).</p>
 
 <p>Important: Refunds are not accepted excepting in cases specified in tickets' general conditions.</p>
@@ -121,10 +132,56 @@ h3{
 Ticket's General Conditions
 </p>
 </div>
+
+<div class="container">
+  
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ticket's General Conditions</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ticket's General Conditions</h4>
+        </div>
+        <div class="modal-body">
+          <p>It is understood that the sale of tickets takes place in our offices and that purchasing the ticket through the portal implies the acceptance of the general conditions
+
+1. TICKET GENERAL TERMS AND CONDITIONS:
+In case of tickets sale of concerts not organized by Primavera Sound, it will govern rules established by the concert promoter/organizer.
+The purchase of the Primavera Sound Barcelona tickets implies the acceptance of the following conditions:
+1.1 Once the ticket has been bought, it will only be changed or refunded in the case of cancellation. You can exercise the right of refusal during 14 calendar days following the purchase provided you bought the tickets a minimum of 14 calendar days before the event (for online ticket sales only). Change of name and refunds are not accepted except on the cases specified at tickets general conditions (point 4.2).
+1.2 The event will only be considered to have been cancelled if more than fifty per cent of the concerts are cancelled. In that case, the purchaser can apply for a refund in a period no longer than thirty days from the date of the public announcement of the cancellation, in the form specified by the Organization. With regards to the paid day tickets or full festival tickets, the event will only be considered as cancelled if more than FIFTY PER CENT OF THE PROGRAMME itself is cancelled. Any cancellation will be on account of the impossibility for the artist or artists contracted by the festival to honour their contract.
+The organisation reserves the right to alter or modify the programme should an artist be unable to perform at the festival for reasons beyond the control of the festival. The festival will look for a replacement.
+Bad weather, natural disasters, Spanish airspace closure or any other force majeure will not lead to ticket refunds.
+1.3 The Organization does not guarantee ticket authenticity if tickets have not been purchased at official selling points. The festival organization does not accept responsibility for the loss or theft of tickets. The ticket must be looked after until the day of the event as if it were cash. The holder of the ticket or the person whose name the ticket is in, accepts all responsibility if a photocopied or forged duplicate of the ticket is presented, and therefore loses all the rights provided by the ticket to attend the event in question. Resale of tickets is forbidden.
+1.4 If you give data of a third party you are obliged to give and obtain consent for the handling of their personal data, which are subject to our privacy policy outlined in the following clause:
+1.5 The ticket-holder recognises that he/she may appear on images taken on the festival site by different media and that these may be used for informative or promotional purposes and that he/she authorises such use which will be the responsibility of the media concerned.
+The images can appear on Internet meaning that their diffusion may be uncontrolled.
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
 			</script>
 		<script src="js/bootstrap.min.js"></script>
+
+
+		
 		<script>
 		$(document).ready(function() {
 			//load partials
