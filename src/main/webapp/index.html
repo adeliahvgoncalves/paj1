@@ -121,10 +121,14 @@ h1 {
 
 
 
-	<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666"></div>
+	<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666">
+
+	</div>
 	<div class="container" align="center" style="margin-top: 120px">
+
 		<div id="menu"></div>
 	</div>
+
 	<div class="w3-container center-block" style="width: 80%; border: 0; height: 30px" >
 		
 	</div>
@@ -281,6 +285,7 @@ h1 {
 								Twins.</p>
 						</div>
 					</a>
+
 				</div>
 			</div>
 </div></div>
@@ -304,8 +309,12 @@ h1 {
 
 	<div class="container" id="contact">
 		<div class="row">
+
 			<br>
+			<p align="center" id="dataatual"></p>
 			<h1 class="centered">THANKS FOR VISITING US</h1>
+			
+
 			<hr>
 			<br> <br>
 			<div class="col-lg-4">
@@ -371,6 +380,7 @@ h1 {
 
 	<div id="footerwrap">
 		<div class="container">
+
 			<h4>
 				Created by <a href="http://blacktie.co">BlackTie.co</a> - Copyright
 				2014
@@ -378,6 +388,16 @@ h1 {
 		</div>
 	</div>
 
+
+
+<script>
+var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //Months are zero based
+    var curr_year = d.getFullYear();
+    dataatualex=curr_date + "-" + curr_month + "-" + curr_year;
+document.getElementById("dataatual").innerHTML = dataatualex;
+</script>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
