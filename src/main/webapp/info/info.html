@@ -55,16 +55,13 @@
 	width: 1110px;
 }
 
-a:focus {
-    outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
+.font{
+font-family: 'Yanone Kaffeesatz', arial, serif;
 }
 
-.b:focus {
+a:hover {
     outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
+    color:red;
 }
 
 .nav-justified>li>a {
@@ -142,19 +139,15 @@ hr {
 	<div id="container1" class="center-block navbar-fixed-top"
 		style="width: 100%; background-color: #996666"></div>
 
-	<div class="container" align="center" style="margin-top: 89px">
+	<div class="container" align="center" style="margin-top: 111px">
 		<div id="menu"></div>
 	</div>
 
 	<!-- 	Accordion -->
 
-	<div class="container">
-		<h2>Accordion Example</h2>
-		<p>
-			<strong>Note:</strong> The <strong>data-parent</strong> attribute
-			makes sure that all collapsible elements under the specified parent
-			will be closed when one of the collapsible item is shown.
-		</p>
+	<div class="container font" style="width:950px">
+		<h2>INFO</h2>
+		<br>
 		<div class="panel-group" id="accordion">
 
 			<!-- PANEL1 INICIALIZATTION -->
@@ -211,15 +204,23 @@ hr {
 				<div class="panel-heading">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" data-parent="#accordion"
-							href="#collapse3">Collapsible Group 3</a>
+							href="#collapse3">TICKETS</a>
 					</h4>
 				</div>
 				<div id="collapse3" class="panel-collapse collapse">
-					<div class="panel-body">Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</div>
+					<div class="panel-body">For ticket information go here</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion"
+							href="#collapse3">MORE INFO</a>
+					</h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">For more info please contact us at
+					......</div>
 				</div>
 			</div>
 		</div>
@@ -231,7 +232,7 @@ hr {
 
 	<!-- ==== SECTION DIVIDER6 ==== -->
 
-	<div class="container" id="contact">
+	<div class="container font" id="contact">
 		<div class="row">
 
 			<br> <br>
