@@ -8,7 +8,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
  
-<script src="jquery/jquery.dotdotdot.json" type="text/javascript"></script>
+<script src="jquery/jquery.dotdotdot.min.js" type="text/javascript"></script>
 
 
 
@@ -42,8 +42,6 @@
 }
 
 .hr-style{
-
-
 display: block;
 position: relative auto;
 width:75%;
@@ -109,9 +107,10 @@ h3 {
 
 .textarea {
 	width: 100%;
-	height: 110px;
 	overflow: hidden;
-	text-overflow: dotdotdot;
+	height: 300px;
+
+
 }
 
 .mycontent-left {
@@ -194,7 +193,7 @@ h1 {
 		<div class="row">
 
 			<!-- PORTFOLIO IMAGE 1 -->
-			<div class="col-md-3">
+			<div class="col-md-4 align="left"">
 
 				<div class="grid mask">
 					<a href="http://abola.pt"> <img
@@ -221,7 +220,7 @@ h1 {
 
 
 			<!-- PORTFOLIO IMAGE 2 -->
-			<div class="col-md-3 ">
+			<div class="col-md-4 align="center" ">
 
 				<div class="grid mask">
 					<a href="http://abola.pt"> <img
@@ -248,7 +247,7 @@ h1 {
 
 
 			<!-- PORTFOLIO IMAGE 3 -->
-			<div class="col-md-3 ">
+			<div class="col-md-4 align="right"">
 
 				<div class="grid mask">
 					<a href="http://abola.pt"> <img
@@ -275,30 +274,11 @@ h1 {
 
 			</div>
 
-				<div class="col-md-3 ">
-
-				<div class="grid mask">
-					<a href="http://abola.pt"> <img
-						src="//assets.primaverasound.com/images/destacadas/dulliedit_20151204141653.jpg"
-						class="img-responsive">
-						<h3>GREG DULLI</h3>
-						<div class="textarea">
-							<p>“An Evening With Greg Dulli” is the name
-								of this American artist’s new tour, during which he will perform
-								tracks from his prolific past as well as some new songs. Dulli
-								started in the music business fronting The Afghan Whigs, one of
-								the key bands of the 90s. After the band split at the end of
-								that decade, Greg formed The Twilight Singers and he
-								collaborated with his close friend Mark Lanegan in The Gutter
-								Twins.</p>
-						</div>
-					</a>
+				
 
 				</div>
 			</div>
-			
-</div>
-</div>
+
 
 
 	<!-- ==== SECTION DIVIDER6 ==== -->
@@ -328,18 +308,20 @@ document.getElementById("dataatual").innerHTML = dataatualex;
 			$("#menu").load("banner/menuindex.html");
 			$("#wrapbar").load("wrapbar/wrapbar.html");
 		});
+
+		$(".textarea p").text( truncate($(".textarea p").text(),492));
+
+function truncate(string, max){
+   if (string.length > max)
+      return string.substring(0,max)+'...';
+   else
+      return string;
+};
 	</script>
 
 
 
-<script>
-$(document).ready(function() {
 
-	$(".textarea p").dotdotdot({
-		ellipsis:'...'
-	});
-});
-</script>
 
 
 </body>

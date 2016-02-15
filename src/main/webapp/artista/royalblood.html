@@ -75,8 +75,12 @@
       font-family: 'Yanone Kaffeesatz', arial, serif;
       color: #ff254b;
     }
+.modal-header  {background-color: #ff254b;}
+#terms:hover{
+  cursor: pointer; cursor: hand;
+}
 
-    hr {
+    #rosinha  {
       display: block;
       position: relative;
       padding: 0;
@@ -90,6 +94,7 @@
       line-height: 0;
       overflow: invisible;
     }
+
 
     .size {
       width: 950px; 
@@ -133,7 +138,7 @@
       <img src="royalblood.jpg" alt="Royal Blood" style="width: 75%; border: 0; height: 400px" class="center-block">
     </div>
 
-    <hr>
+    <hr id="rosinha">
 
     <div class="container size">
 
@@ -143,7 +148,7 @@
          
 
 
-        <hr>
+       <hr id="rosinha">
 
         <div class="container">
 
@@ -201,9 +206,9 @@
 
 
 
-<footer class="container-fluid text-center">
- <a href="#" title="To the top of this page" style="color:#ff254b"><b>BACK TO TOP</b></a>
-</footer>
+<div>                    
+  <div id="wrapbar" class="center-block" style="width:75%"></div>
+</div>
 
 <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -213,6 +218,7 @@
       //load partials
       $("#container1").load("../banner/head.html");
       $("#menu").load("../banner/menuartista.html");
+       $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
 

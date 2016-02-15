@@ -19,6 +19,7 @@
 		<wildfly.plugin.version>1.1.0.Alpha5</wildfly.plugin.version>
 	</properties>
 
+	<!-- project plugins -->
 	<build>
 		<plugins>
 			<plugin>
@@ -35,6 +36,27 @@
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<version>${wildfly.plugin.version}</version>
+				<executions>
+					<!-- undeploy on clean phase -->
+					<execution>
+						<id>undeploy</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>undeploy</goal>
+						</goals>
+						<configuration>
+							<ignoreMissingDeployment>true</ignoreMissingDeployment>
+						</configuration>
+					</execution>
+					<!-- deploy on install phase -->
+					<execution>
+						<id>deploy</id>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

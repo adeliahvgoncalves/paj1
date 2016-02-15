@@ -69,14 +69,17 @@
       background-color: #FFFFFF;
     }
 
-
+.modal-header  {background-color: #ff254b;}
+#terms:hover{
+  cursor: pointer; cursor: hand;
+}
 
     h1 {
       font-family: 'Yanone Kaffeesatz', arial, serif;
       color: #ff254b;
     }
 
-    hr {
+   #rosinha {
       display: block;
       position: relative;
       padding: 0;
@@ -133,7 +136,7 @@
       <img src="af1.jpg" alt="Arcade Fire" style="width: 75%; border: 0; height: 400px" class="center-block">
     </div>
 
-    <hr>
+    <hr id="rosinha">
 
     <div class="container size">
 
@@ -145,7 +148,7 @@
 
         <p>The band plays guitar, drums, bass guitar, piano, violin, viola, cello, double bass, xylophone, glockenspiel, keyboard, synthesizer, French horn, accordion, harp, mandolin, and hurdy-gurdy, and takes most of these instruments on tour; the multi-instrumentalist band members switch duties throughout shows.</p>
 
-        <hr>
+       <hr id="rosinha">
 
         <div class="container">
 
@@ -211,10 +214,9 @@
 
 
 
-<footer class="container-fluid text-center">
- <a href="#" title="To the top of this page" style="color:#ff254b"><b>BACK TO TOP</b></a>
-</footer>
-
+<div>                    
+  <div id="wrapbar" class="center-block" style="width:75%"></div>
+</div>
 
 
 <script
@@ -225,6 +227,7 @@
       //load partials
       $("#container1").load("../banner/head.html");
       $("#menu").load("../banner/menuartista.html");
+      $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
 

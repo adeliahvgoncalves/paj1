@@ -76,7 +76,12 @@
       color: #ff254b;
     }
 
-    hr {
+       .modal-header  {background-color: #ff254b;}
+#terms:hover{
+  cursor: pointer; cursor: hand;
+}
+
+    #rosinha  {
       display: block;
       position: relative;
       padding: 0;
@@ -133,7 +138,7 @@
       <img src="ironmaiden.jpg" alt="Iron Maiden" style="width: 75%; border: 0; height: 400px" class="center-block">
     </div>
 
-    <hr>
+   <hr id="rosinha">
 
     <div class="container size">
 
@@ -149,7 +154,7 @@
 
 <p>Despite little radio or television support, Iron Maiden are considered one of the most successful heavy metal bands in history, with The Observer reporting in 2015 that the band have sold over 90 million albums worldwide. The band won the Ivor Novello Award for international achievement in 2002. As of October 2013, the band have played over 2000 live shows throughout their career. For the past 35 years, the band have been supported by their famous mascot, "Eddie", who has appeared on almost all of their album and single covers, as well as in their live shows.</p>
 
-        <hr>
+        <hr id="rosinha">
 
         <div class="container">
 
@@ -265,9 +270,9 @@
 
 
 
-<footer class="container-fluid text-center">
- <a href="#" title="To the top of this page" style="color:#ff254b"><b>BACK TO TOP</b></a>
-</footer>
+<div>                    
+  <div id="wrapbar" class="center-block" style="width:75%"></div>
+</div>
 
 
 <script
@@ -277,7 +282,8 @@
     $(document).ready(function() {
       //load partials
       $("#container1").load("../banner/head.html");
-      $("#menu").load("../banner/menuartista.html");
+      $("#menu").load("../banner/menuartista.html")
+      $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
 
