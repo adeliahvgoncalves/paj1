@@ -7,20 +7,6 @@
 
 
 <link rel="stylesheet" type="text/css" href="../assets/css/comic_zine.css">
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="http://w.soundcloud.com/player/api.js"></script>
-<script>
-   $(document).ready(function() {
-     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
-     widget.bind(SC.Widget.Events.READY, function() {
-       console.log('Ready...');
-     });
-     $('button').click(function() {
-       widget.toggle();
-     });
-   });
-  </script>
   <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
   rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
@@ -206,7 +192,7 @@ hr {
 				</div>
 				<div id="collapse3" class="panel-collapse collapse">
 					<div class="panel-body" >
-					<p> <a href="../artista/tickets.html/" style="color:#ff254b">For ticket information go here</a></p>
+					<p> <a href="../artista/tickets.html" style="color:#ff254b">For ticket information go here</a></p>
 
 					</div>
 				</div>
@@ -320,6 +306,7 @@ hr {
 			//load partials
 			$("#container1").load("../banner/head.html");
 			$("#menu").load("../banner/menuinfo.html");
+	
 		});
 	</script>
 </body>
