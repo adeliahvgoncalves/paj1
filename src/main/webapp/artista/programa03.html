@@ -93,11 +93,17 @@ h3{
 
 </style>
 
-<body data-spy="scroll" data-offset="0">
+<body data-spy="scroll" data-offset="0" onload="verificaSeExisteNomeSenaoEscreve()">
 	<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666"></div>
 	<div class="container" align="center" style="margin-top: 120px">
 		<div id="menu"></div>
 	</div>
+
+	<dir>
+	<input type="text" name="name" id="name-textfield">
+	<p id="name-label">Adicione nome</p>
+  	<button onclick="saveName()">Confirme</button>
+</dir>
 
 		<h1 style="text-align: center;">Program</h1>
 		<h2 style="text-align: center;">03 June</h2>
@@ -147,6 +153,42 @@ h3{
 		});
 	</script>
 
+<script>
+	function verificaSeExisteNomeSenaoEscreve() {
+
+			// Check browser support
+		if (typeof(Storage) !== "undefined") {
+		    // Store
+		    var storedName = localStorage.getItem("username");
+		    if(storedName != null){
+
+		    	document.getElementById("name-label").innerHTML = "Welcome "+storedName+"!";
+		    }
+		}
+	}
+
+	function saveName(argument) {
+
+		var name = document.getElementById("name-textfield").value;
+
+
+
+	// Check browser support
+	if (typeof(Storage) !== "undefined") {
+	    // Store
+	    localStorage.setItem("username", name);
+
+	} else {
+		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+
+	
+	console.log(name);
+	var storedName = localStorage.getItem("username");
+	document.getElementById("name-label").innerHTML = "Welcome "+storedName+"!";
+
+}
+</script>
 
 </body>
 </html>
