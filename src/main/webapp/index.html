@@ -283,7 +283,7 @@ h1 {
 						class="img-responsive">
 						<h3>GREG DULLI</h3>
 						<div class="textarea">
-							<p>“An Evening With Greg Dulli” is the name
+								“An Evening With Greg Dulli” is the name
 								of this American artist’s new tour, during which he will perform
 								tracks from his prolific past as well as some new songs. Dulli
 								started in the music business fronting The Afghan Whigs, one of
@@ -328,6 +328,15 @@ document.getElementById("dataatual").innerHTML = dataatualex;
 			$("#menu").load("banner/menuindex.html");
 			$("#wrapbar").load("wrapbar/wrapbar.html");
 		});
+
+		$(".textarea p").text( truncate($(".textarea p").text(),40));
+
+function truncate(string, max){
+   if (string.length > max)
+      return string.substring(0,max)+'...';
+   else
+      return string;
+};
 	</script>
 
 

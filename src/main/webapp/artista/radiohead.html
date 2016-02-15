@@ -76,7 +76,12 @@
       color: #ff254b;
     }
 
-    hr {
+    .modal-header  {background-color: #ff254b;}
+#terms:hover{
+  cursor: pointer; cursor: hand;
+}
+
+    #rosinha  {
       display: block;
       position: relative;
       padding: 0;
@@ -133,7 +138,7 @@
       <img src="radiohead1.jpg" alt="Radiohead" style="width: 75%; border: 0; height: 400px" class="center-block">
     </div>
 
-    <hr>
+  <hr id="rosinha">
 
     <div class="container size">
 
@@ -147,7 +152,7 @@
 
 <p>Radiohead have sold more than 30 million albums worldwide. Their work places highly in both listener polls and critics' lists of the best music of the 1990s and 2000s.In 2005, they were ranked 73rd in Rolling Stone's list of "The Greatest Artists of All Time"; Jonny Greenwood (48th) and O'Brien were both included in Rolling Stone's list of greatest guitarists, and Yorke (66th) in their list of greatest singers. In 2009, Rolling Stone readers voted the group the second best artist of the 2000s.</p>
 
-        <hr>
+       <hr id="rosinha">
 
         <div class="container">
 
@@ -234,9 +239,10 @@
      </div>
 
 
-<footer class="container-fluid text-center">
- <a href="#" title="To the top of this page" style="color:#ff254b"><b>BACK TO TOP</b></a>
-</footer>
+<div>                    
+  <div id="wrapbar" class="center-block" style="width:75%"></div>
+</div>
+
 
 
 <script
@@ -247,6 +253,7 @@
       //load partials
       $("#container1").load("../banner/head.html");
       $("#menu").load("../banner/menuartista.html");
+      $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
 

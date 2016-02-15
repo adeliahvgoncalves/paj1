@@ -76,7 +76,13 @@
       color: #ff254b;
     }
 
-    hr {
+   
+    .modal-header  {background-color: #ff254b;}
+#terms:hover{
+  cursor: pointer; cursor: hand;
+}
+
+    #rosinha  {
       display: block;
       position: relative;
       padding: 0;
@@ -133,7 +139,7 @@
       <img src="dinosaur.jpg" alt="Dinosaur Jr." style="width: 75%; border: 0; height: 400px" class="center-block">
     </div>
 
-    <hr>
+    <hr id="rosinha">
 
     <div class="container size">
 
@@ -146,7 +152,7 @@
  <p>Mascis's drawling vocals and distinct guitar sound, hearkening back to 1960s and '70s classic rock and characterized by extensive use of feedback and distortion, were highly influential in the alternative rock movement of the 1990s.</p>
 
 
-        <hr>
+       <hr id="rosinha">
 
         <div class="container">
 
@@ -240,9 +246,9 @@
 
 
 
-<footer class="container-fluid text-center">
- <a href="#" title="To the top of this page" style="color:#ff254b"><b>BACK TO TOP</b></a>
-</footer>
+<div>                    
+  <div id="wrapbar" class="center-block" style="width:75%"></div>
+</div>
 
 
 
@@ -254,6 +260,7 @@
       //load partials
       $("#container1").load("../banner/head.html");
       $("#menu").load("../banner/menuartista.html");
+       $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
 
