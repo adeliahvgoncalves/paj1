@@ -201,7 +201,7 @@ h3 {
 	color: grey;
 }
 
-p {
+p,li {
 	font-size: 18px;
 	color: black;
 }
