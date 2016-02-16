@@ -12,95 +12,27 @@
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link href="../assets/css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<style type="text/css" media="screen">
-.nav-justified {
-	background-color: #FFFFFF;
-	border-radius: 5px;
-	font-family: 'Yanone Kaffeesatz', arial, serif;
-	font-size: 1.5em;
-	color: #000000;
-	height: 80px;
-	width: 1110px;
-}
 
-.nav-justified>li>a {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-bottom: 5px;
-	font-weight: bold;
-	color: #000000;
-	text-align: center;
-	width: 185;
-	background-color: #FFFFFF; /* Old browsers */
-	border-right: 1px solid #d5d5d5;
-	border-left: 1px solid #d5d5d5;
-	background-repeat: repeat-x; /* Repeat the gradient */
-	border-bottom: 1px solid #d5d5d5;
-	border-top: 1px solid #d5d5d5;
-}
-
-.nav-justified>li>a:hover {
-	color: #ff254b;
-}
-
-<style type ="text /css">#wrap {
-	width: 200px;
-	border-top-color: rgb(255, 37, 75);
-	margin: 0 auto;
-}
-
-#left_col {
-	border-top-color: rgb(255, 37, 75);
-	text-align: center;
-	float: left;
-	width: 600px;
-}
-
-#right_col {
-	float: right;
-	border-top-color: rgb(255, 37, 75);
-	text-align: center;
-	width: 600px;
-}
-h1 {
-	font-family: 'Yanone Kaffeesatz', arial, serif;
-	color:#ff254b;
-}
-
-h3{
-	font-family: 'Yanone Kaffeesatz', arial, serif;
-	font-size: 26px;
-	
-}
-
-#page-title{
-
-	font-family: 'comic_zine_otregular';
-	font-size: 4em;
-}
-
-.center {
-    margin: auto;
-    width: 65%;
-    border-top: 3px solid #ff254b;
-   padding-top: 20px;
-  
-}
-</style>
 
 <body data-spy="scroll" data-offset="0">
-	<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666"></div>
+
+	<div id="container1" class="center-block navbar-fixed-top" style="width: 100% ; background-color:#996666">
+		
+	</div>
+
 	<div class="container" align="center" style="margin-top: 120px">
-		<div id="menu"></div>
+		<div id="menu">
+			
+		</div>
 	</div>
 
 		<h1 style="text-align: center;">Program</h1>
 		<h2 style="text-align: center;">04 June</h2>
-		<br>   
+		<br>  
+
 <div id="wrap">
     <div id="left_col">
         
@@ -108,13 +40,13 @@ h3{
         <div class="center" >
 		
 
-				<h3>Iron Maiden</h3>
+				<h3 style="text-align: center">Iron Maiden</h3>
 				</div>
    
    <br>    
   <br>
 				<div class="center" >
-				<h3>Pearl Jam</h3>
+				<h3 style="text-align: center">Pearl Jam</h3>
 			</div>
 
    <br>    
@@ -122,18 +54,20 @@ h3{
 		</div>
 		<div id="right_col">
 		  <div class="center" >
-			<h3>At The Drive In</h3>
+			<h3 style="text-align: center">At The Drive In</h3>
 			</div>
    
    <br>    
   <br>
   <div class="center" >
-			<h3>Arcade Fire</h3>
+			<h3 style="text-align: center">Arcade Fire</h3>
 		</div>
 	</div>
+</div>
+
 
 <div>                    
-  <div id="wrapbar" class="center-block" style="width:75%"></div>
+ <div id="wrapbar" class="center-block" style="width:75%"></div>
 </div>
 
 	<script
@@ -144,7 +78,7 @@ h3{
 			//load partials
 			$("#container1").load("../banner/head.html");
 			$("#menu").load("../banner/menuartista.html");
-			 $("#wrapbar").load("../wrapbar/wrapbar.html");
+			$("#wrapbar").load("../wrapbar/wrapbar.html");
 		});
 	</script>
 
