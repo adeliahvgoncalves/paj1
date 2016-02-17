@@ -27,13 +27,7 @@
     
   <div id="menu"></div>
   
-  </div>
-
-	<dir>
-	<input type="text" name="name" id="name-textfield">
-	<p id="name-label">Adicione nome</p>
-  	<button onclick="saveName()">Confirme</button>
-</dir>
+ 
 
 		<h1 style="text-align: center;">Program</h1>
 		<h2 style="text-align: center;">03 June</h2>
@@ -85,42 +79,7 @@
 		});
 	</script>
 
-<script>
-	function verificaSeExisteNomeSenaoEscreve() {
 
-			// Check browser support
-		if (typeof(Storage) !== "undefined") {
-		    // Store
-		    var storedName = localStorage.getItem("username");
-		    if(storedName != null){
-
-		    	document.getElementById("name-label").innerHTML = "Welcome "+storedName+"!";
-		    }
-		}
-	}
-
-	function saveName(argument) {
-
-		var name = document.getElementById("name-textfield").value;
-
-
-
-	// Check browser support
-	if (typeof(Storage) !== "undefined") {
-	    // Store
-	    localStorage.setItem("username", name);
-
-	} else {
-		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-	}
-
-	
-	console.log(name);
-	var storedName = localStorage.getItem("username");
-	document.getElementById("name-label").innerHTML = "Welcome "+storedName+"!";
-
-}
-</script>
 
 </body>
 </html>

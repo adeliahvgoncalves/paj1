@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Facelets Hello Greeting</title>
+</h:head>
+<h:body>
+
+	<div class="container">
+
+		<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+			Sound 16</h1>
+		<i> <span style="display: inline; color: grey; font-size: 120%"> * 3-4 Jun
+				OHP</span>
+		</i>
+
+
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul style="width: 300px; height: 300px;"  class="dropdown-menu" aria-labelledby="dropdownMenu1">
+   	<li><h:form style="width: 300px; height: 300px; ">
+							<p>Name</p>
+								<h:inputText id="username" title="My name is: " value="#{helloBackingBean.name}" required="true" requiredMessage="Error: A name is required." maxlength="25" />
+							
+								<h:commandButton id="submit" value="Submit" />
+								<h:commandButton id="reset" value="Reset" type="reset" />
+						</h:form></li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+	
+	</div>
+</h:body>
+</html>
+
+
+
+
+
+

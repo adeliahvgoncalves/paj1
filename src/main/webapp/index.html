@@ -126,7 +126,7 @@ document.getElementById("dataatual").innerHTML = dataatualex;
 	<script>
 		$(document).ready(function() {
 			//load partials
-			$("#container1").load("banner/head.html");
+			$("#container1").load("banner/head.xhtml");
 			$("#menu").load("banner/menuindex.html");
 			$("#wrapbar").load("wrapbar/wrapbar.html");
 			$("#news-1").load("news/news-tab1.html");
@@ -172,7 +172,7 @@ function buildCarrouselItem(item){
 	//var image = !body.textContent || !body.innerText;
 	
 	template.find("h3").text(item.title.toUpperCase());
-
+	template.find("h4").text("* OTHER MUSIC NEWS *");
 
 	$('#test').html(item.description);
 	$('#test').find('img').hide();
