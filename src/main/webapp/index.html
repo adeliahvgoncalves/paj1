@@ -171,7 +171,9 @@ function buildCarrouselItem(item){
 	var template  = $("#last");
 	//var image = !body.textContent || !body.innerText;
 	
-	template.find("h3").text(item.title);
+	template.find("h3").text(item.title.toUpperCase());
+
+
 	$('#test').html(item.description);
 	$('#test').find('img').hide();
 	$('#test').find('strong').hide();

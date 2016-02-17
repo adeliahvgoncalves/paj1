@@ -219,3 +219,7 @@ p,li {
 	font-size: 18px;
 	color: black;
 }
+
+#myCarousel2 p{
+	font-size: 15px;
+}
