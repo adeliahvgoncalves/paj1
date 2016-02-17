@@ -4,122 +4,133 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html">
 <head>
-	<meta charset="utf-8"></meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-  
 
-<link rel="stylesheet" type="text/css" href="../assets/css/comic_zine.css"/>
+
+<link rel="stylesheet" type="text/css"
+	href="../assets/css/comic_zine.css" />
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
-  rel='stylesheet' type='text/css'/>
-<link rel="stylesheet" href="../assets/css/bootstrap.css"/>
-<link href="../assets/css/main.css" rel="stylesheet"/>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+<link href="../assets/css/main.css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
 
 <style type="text/css" media="screen">
-
-
 #left_col {
-  text-align: center;
-  float: left;
-  width: 675px;
+	text-align: center;
+	float: left;
+	width: 675px;
 }
 
 #right_col {
-  float: right;
-  text-align: center;
-  width: 600px;
+	float: right;
+	text-align: center;
+	width: 600px;
 }
-
-
 </style>
 
 </head>
 
-<body data-spy="scroll" data-offset="0">
+<h:body data-spy="scroll" data-offset="0">
 
 
-<div id="container1" class="center-block navbar-fixed-top"
-    ></div>
+	<div id="container1" class="center-block navbar-fixed-top">
 
-  <div class= "container" id="container2" >
-    
-  <div id="menu"></div>
-  
-  </div>
+		<div class="col-md-8">
 
-
-<h1 style="text-align:center;">Artists</h1>
-<br/>
-
-
-<div class="container">
-
-
-<div id="row">
-    <div id="left_col"> 
-      
-  <div>
-    <a href="radiohead.html" class="btn btn-primary">Radiohead</a>
- </div>
- <br/>
- <div>
-    <a href="mogwai.html" class="btn btn-primary">Mogwai</a>
- </div>
- <br/>
-    <div>
-    <a href="ironmaiden.html" class="btn btn-primary">Iron Maiden</a>
- </div>
- <br/>
-    <div>
-    <a href="pearljam.html" class="btn btn-primary">Pearl Jam</a>
-
-</div>
- </div>
-
-    <div id="right-col">
-    
-    <a href="royalblood.html" class="btn btn-primary">Royal Blood</a>
-    </div>
- <br/>
-    <a href="atdrivein.html" class="btn btn-primary">At The Drive In</a>
-    </div>
- <br/>
- <div>
-    <a href="arcadefire.html" class="btn btn-primary">Arcade Fire</a>
-    </div>
- <br/>
- <div>
-    <a href="dinosaurjr.html" class="btn btn-primary">Dinosaur Jr</a>
-  
-    </div>
-</div>
+			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+				Sound 16</h1>
+			<i> <span style="display: inline; color: grey; font-size: 120%">
+					* 3-4 Jun OHP </span>
+			</i>
+		</div>
+		<div class="col-md-4 center-block">
+			<p style="display: inline; color: grey">SESSION NAME:
+				#{helloBackingBean.name}</p>
+		</div>
 
 
-	<div class="center-block" style="width: 75%">
-<p>Session name: #{helloBackingBean.name}</p>
-</div>
 
-<div>                    
-  <div id="wrapbar" class="center-block" style="width:75%"></div>
-</div>
-  
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+	</div>
+
+	<div class="container" id="container2">
+
+		<div id="menu"></div>
+
+	</div>
+
+
+	<h1 style="text-align: center;">Artists</h1>
+	<br />
+
+
+	<div class="container">
+
+
+		<div id="row">
+			<div id="left_col">
+
+				<div>
+					<a href="radiohead.xhtml" class="btn btn-primary">Radiohead</a>
+				</div>
+				<br />
+				<div>
+					<a href="mogwai.xhtml" class="btn btn-primary">Mogwai</a>
+				</div>
+				<br />
+				<div>
+					<a href="ironmaiden.xhtml" class="btn btn-primary">Iron Maiden</a>
+				</div>
+				<br />
+				<div>
+					<a href="pearljam.xhtml" class="btn btn-primary">Pearl Jam</a>
+
+				</div>
+			</div>
+
+			<div id="right-col">
+
+				<a href="royalblood.xhtml" class="btn btn-primary">Royal Blood</a>
+			</div>
+			<br /> <a href="atdrivein.xhtml" class="btn btn-primary">At The
+				Drive In</a>
+		</div>
+		<br />
+		<div>
+			<a href="arcadefire.xhtml" class="btn btn-primary">Arcade Fire</a>
+		</div>
+		<br />
+		<div>
+			<a href="dinosaurjr.xhtml" class="btn btn-primary">Dinosaur Jr</a>
+
+		</div>
+	</div>
+
+	<div>
+		<div id="wrapbar" class="center-block" style="width: 75%"></div>
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
  
     $(document).ready(function() {
       //load partials
-      $("#container1").load("../banner/head.html");
+
       $("#menu").load("../banner/menuartista.html");
         $("#wrapbar").load("../wrapbar/wrapbar.html");
     });
   </script>
-</body>
+</h:body>
 </html>
