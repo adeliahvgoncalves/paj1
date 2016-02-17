@@ -32,6 +32,17 @@ hr {
   
 }
 
+#container1{
+	width: 100%;
+	background-color: #000033;
+	}
+
+	#container2{
+		margin-top: 61px;
+		align-content: center;
+	
+	}
+
  .size {
       width: 950px; 
       height: 400px;
@@ -190,6 +201,7 @@ font-family: 'Yanone Kaffeesatz', arial, serif;
 
 	font-family: 'comic_zine_otregular';
 	font-size: 4em;
+
 }
 
 
