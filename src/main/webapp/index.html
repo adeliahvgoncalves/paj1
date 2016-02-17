@@ -142,39 +142,56 @@ function truncate(string, max){
    else
       return string;
 };
-console.log("asd");
+
+
 
 $.get( "http://www.uncut.co.uk/feed/rss", function(data) {
-    var $XML = $(data);
-    $XML.find("item").each(function() {
-        var $this = $(this),
-            item = {
+    var $this = $(data).find("item:first"),
+
+
+item = {
                 title:       $this.find("title").text(),
                 link:        $this.find("link").text(),
                 description: $this.find("description").text(),
                 pubDate:     $this.find("pubDate").text(),
                 author:      $this.find("author").text()
             };
+
+    
         //$('#content-div').append($('<h2/>').text(item.title));
         //etc...
 
+        buildCarrouselItem(item);
+
         console.log($this);
-    });
+  
 });
 
-jQuery.getFeed({
-   url     : "http://www.uncut.co.uk/feed/rss",
-   success : function (feed) {
-      console.log(feed.title);
-      // do more stuff here
-   }
-});
+function buildCarrouselItem(item){
+	var template  = $("#last");
+	//var image = !body.textContent || !body.innerText;
+	
+	template.find("h3").text(item.title);
+	//body2.find("p")
+	$('#test').html(item.description);
+	$('#test').find('img').hide();
+	$('#test').find('strong').hide();
+	
+
+	$('#imgr').attr('src', $('#test').find('img').attr('src'));
+	
+	
+	//body.find("img").attr("src","image");
+
+	$("#last").insertBefore(template);
+	console.log(template);
+}
+
 
 
 
 function myFunction(){
-	$("news-change").load("news/news-tab2.html");
-	
+	$("news-change").load("news/news-tab2.html");	
 }
 	</script>
 
