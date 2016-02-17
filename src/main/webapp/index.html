@@ -183,6 +183,14 @@ function buildCarrouselItem(item){
 	console.log(template);
 }
 
+$(window).bind('resize', function(){
+    var w = $(this).width(),
+        threshold = 768;
+
+        if(w < threshold){
+            $('.nav-justified').hide().fadeIn();
+        }
+});
 
 	</script>
 
