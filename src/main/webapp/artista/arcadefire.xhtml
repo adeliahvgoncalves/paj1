@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
 <link rel="stylesheet" type="text/css" href="../assets/css/comic_zine.css">
@@ -31,10 +34,10 @@
 
 
 
-</head>
 
+</h:head>
 
-  <body data-spy="scroll" data-offset="0" >
+<h:body data-spy="scroll" data-offset="0">
 
    <div id="container1" class="center-block navbar-fixed-top"
     ></div>
@@ -129,6 +132,11 @@
 
 
 
+	<div class="center-block" style="width: 75%">
+<p>Session name: #{helloBackingBean.name}</p>
+</div>
+
+
 <div>                    
   <div id="wrapbar" class="center-block" style="width:75%"></div>
 </div>
@@ -146,5 +154,5 @@
     });
   </script>
 
-</body>
+</h:body>
 </html>
