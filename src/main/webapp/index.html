@@ -156,6 +156,33 @@ function truncate(string, max){
    else
       return string;
 };
+console.log("asd");
+
+$.get( "http://www.uncut.co.uk/feed/rss", function(data) {
+    var $XML = $(data);
+    $XML.find("item").each(function() {
+        var $this = $(this),
+            item = {
+                title:       $this.find("title").text(),
+                link:        $this.find("link").text(),
+                description: $this.find("description").text(),
+                pubDate:     $this.find("pubDate").text(),
+                author:      $this.find("author").text()
+            };
+        //$('#content-div').append($('<h2/>').text(item.title));
+        //etc...
+
+        console.log($this);
+    });
+});
+
+jQuery.getFeed({
+   url     : "http://www.uncut.co.uk/feed/rss",
+   success : function (feed) {
+      console.log(feed.title);
+      // do more stuff here
+   }
+});
 
 
 
