@@ -1,49 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
 <head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet" type="text/css" href="../assets/css/comic_zine.css">
+<link rel="stylesheet" type="text/css"
+	href="../assets/css/comic_zine.css" />
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
-	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../assets/css/bootstrap.css">
-<link href="../assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+<link href="../assets/css/main.css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<h:body data-spy="scroll" data-offset="0">
 
 
-<body data-spy="scroll" data-offset="0">
+	<div id="container1" class="center-block navbar-fixed-top">
 
-<div id="container1" class="center-block navbar-fixed-top"
-    ></div>
+		<div class="col-md-8">
 
-  <div class= "container" id="container2" >
-    
-  <div id="menu"></div>
-  
-  </div>
+			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+				Sound 16</h1>
+			<i> <span style="display: inline; color: grey; font-size: 120%">
+					* 3-4 Jun OHP </span>
+			</i>
+		</div>
+		<div class="col-md-4 center-block">
+			<p style="display: inline; color: grey">SESSION NAME:
+				#{helloBackingBean.name}</p>
+		</div>
+
+
+
+	</div>
+
+	<div class="container" id="container2">
+
+		<div id="menu"></div>
+
+	</div>
+
 
 <h1 style="text-align:center;">Day Tickets</h1>
-<hr id="rosinha" >
+<hr id="rosinha"/>
 
 <div class="container " align="center"> 
 <ul style="list-style-type:none">
   <li>Until the festival: 80€ or until sold out</li>
-<br>
+
   <li>Box office: 90€ (in case of sold out at the previous batch there won't be available at box office)
   	</li>
  
 </ul>
-<br>
+<br/>
 <p>The tickets can be bought physically until they sell out in MAdelia Sound 16 store (Avenida Variante,13).</p>
-<br>
+<br/>
 <p>Important: Refunds are not accepted excepting in cases specified in tickets' general conditions.</p>
-<br>
+<br/>
 <p>* Distribution costs are not included in the price of the tickets.
 
 </p>
@@ -64,7 +88,7 @@
           <h4 class="modal-title" >Ticket's General Conditions</h4>
         </div>
         <div class="modal-body">
-          <p>It is understood that the sale of tickets takes place in our offices and that purchasing the ticket through the portal implies the acceptance of the general conditions
+          <p>It is understood that the sale of tickets takes place in our offices and that purchasing the ticket through the portal implies the acceptance of the general conditions</p>
 <h4>TICKET GENERAL TERMS AND CONDITIONS:</h4>
 <p>In case of tickets sale of concerts not organized by Primavera Sound, it will govern rules established by the concert promoter/organizer.
 The purchase of the Primavera Sound Barcelona tickets implies the acceptance of the following conditions:</p>
@@ -81,8 +105,6 @@ The images can appear on Internet meaning that their diffusion may be uncontroll
   
 </ol>  
 
-
-</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -103,10 +125,9 @@ The images can appear on Internet meaning that their diffusion may be uncontroll
 		<script>
 		$(document).ready(function() {
 			//load partials
-			$("#container1").load("../banner/head.html");
 			$("#menu").load("../banner/menuartista.html");
 			  $("#wrapbar2").load("../wrapbar/wrapbar2.html");
 		});
 	</script>
-</body>
+</h:body>
 </html>

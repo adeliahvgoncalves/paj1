@@ -1,36 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
 <head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet" type="text/css" href="../assets/css/comic_zine.css">
+<link rel="stylesheet" type="text/css"
+	href="../assets/css/comic_zine.css" />
 <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
-	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../assets/css/bootstrap.css">
-<link href="../assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+<link href="../assets/css/main.css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<h:body data-spy="scroll" data-offset="0">
+
+
+	<div id="container1" class="center-block navbar-fixed-top">
+
+		<div class="col-md-8">
+
+			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+				Sound 16</h1>
+			<i> <span style="display: inline; color: grey; font-size: 120%">
+					* 3-4 Jun OHP </span>
+			</i>
+		</div>
+		<div class="col-md-4 center-block">
+			<p style="display: inline; color: grey">SESSION NAME:
+				#{helloBackingBean.name}</p>
+		</div>
 
 
 
-<body data-spy="scroll" data-offset="0">
+	</div>
 
-	<div id="container1" class="center-block navbar-fixed-top"
-    ></div>
+	<div class="container" id="container2">
 
-  <div class= "container" id="container2" >
-    
-  <div id="menu"></div>
-  
-  </div>
+		<div id="menu"></div>
+
+	</div>
+
 
 		<h1 style="text-align: center;">Program</h1>
 		<h2 style="text-align: center;">04 June</h2>
-		<br>  
+		<br/>  
 
 <div id="wrap">
     <div id="left_col">
@@ -42,22 +68,22 @@
 				<h3 style="text-align: center">Iron Maiden</h3>
 				</div>
    
-   <br>    
-  <br>
+  <br/>
+   <br/>
 				<div class="center" >
 				<h3 style="text-align: center">Pearl Jam</h3>
 			</div>
 
-   <br>    
-  <br>
+  <br/>
+   <br/>
 		</div>
 		<div id="right_col">
 		  <div class="center" >
 			<h3 style="text-align: center">At The Drive In</h3>
 			</div>
    
-   <br>    
-  <br>
+   <br/>    
+  <br/>
   <div class="center" >
 			<h3 style="text-align: center">Arcade Fire</h3>
 		</div>
@@ -75,12 +101,12 @@
 		<script>
 		$(document).ready(function() {
 			//load partials
-			$("#container1").load("../banner/head.html");
+		
 			$("#menu").load("../banner/menuartista.html");
 			$("#wrapbar").load("../wrapbar/wrapbar.html");
 		});
 	</script>
 
 
-</body>
+</h:body>
 </html>
