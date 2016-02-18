@@ -24,20 +24,15 @@
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <style type="text/css" media="screen">
-
-
 style type ="text /css">#wrap {
 	width: 600px;
 	border-top-color: rgb(255, 37, 75);
 	margin: 0 auto;
 }
 
-
-
-
 a:hover {
-    outline: none !important;
-    color:red;
+	outline: none !important;
+	color: red;
 }
 
 #left_col {
@@ -53,9 +48,6 @@ a:hover {
 	text-align: center;
 	width: 500px;
 }
-
-
-
 }
 </style>
 </head>
@@ -76,8 +68,10 @@ a:hover {
 		<div class="col-md-4 center-block">
 			<p style="display: inline; color: grey">SESSION NAME:
 				#{helloBackingBean.name}</p>
-				<h:form><h:commandButton id="submit" class="btn btn-danger"
-					value="Logout" actionListener="#{helloBackingBean.logout}"/></h:form>
+			<h:form>
+				<h:commandButton id="submit" class="btn btn-danger" value="Logout"
+					actionListener="#{helloBackingBean.logout}" />
+			</h:form>
 		</div>
 
 
@@ -90,14 +84,14 @@ a:hover {
 
 	</div>
 
-	
 
-	<div class="container font" style="width:950px">
-		<h1 style="text-align:center;">INFO</h1>
-		<br/>
+
+	<div class="container font" style="width: 950px">
+		<h1 style="text-align: center;">INFO</h1>
+		<br />
 		<div class="panel-group" id="accordion">
 
-			
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
@@ -135,14 +129,15 @@ a:hover {
 				<div id="collapse2" class="panel-collapse collapse">
 					<div class="panel-body">
 						<p>
-							<span style="color: red;">// WHERE IS MADELIA SOUND - </span>T in the
-							Park is held at Strathallan Castle, Perthshire, Scotland, PH3 1JZ
-							
+							<span style="color: red;">// WHERE IS MADELIA SOUND - </span>T in
+							the Park is held at Strathallan Castle, Perthshire, Scotland, PH3
+							1JZ
+
 						</p>
 						<p>
-							<span style="color: red;">// TRAVEL INFORMATION - </span>
-							Travel information will be available soon.
-							
+							<span style="color: red;">// TRAVEL INFORMATION - </span> Travel
+							information will be available soon.
+
 						</p>
 					</div>
 				</div>
@@ -153,35 +148,23 @@ a:hover {
 						<a data-toggle="collapse" data-parent="#accordion"
 							href="#collapse3">TICKETS</a>
 
-					
+
 					</h4>
 				</div>
 				<div id="collapse3" class="panel-collapse collapse">
-					<div class="panel-body" >
-					<p> <a href="../artista/tickets.html" style="color:#ff254b">For ticket information go here</a></p>
+					<div class="panel-body">
+						<p>
+							<a href="../artista/tickets.xhtml" style="color: #ff254b">For
+								ticket information go here</a>
+						</p>
 
 					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion"
-							href="#collapse3">MORE INFO</a>
-					</h4>
-				</div>
-				<div id="collapse3" class="panel-collapse collapse">
-					<div class="panel-body">For more info please contact us at
-					987236761</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-	<div>                    
-  <div id="wrapbar2" class="center-block" style="width:75%"></div>
-</div>
+	<div id="wrapbar2" class="center-block" style="width: 75%"></div>
 
 	<script>
 		$(document).ready(function() {
