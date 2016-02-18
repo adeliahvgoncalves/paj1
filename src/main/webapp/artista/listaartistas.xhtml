@@ -25,40 +25,27 @@
 
 
 
-<style type="text/css" media="screen">
-#left_col {
-	text-align: center;
-	float: left;
-	width: 675px;
-}
-
-#right_col {
-	float: right;
-	text-align: center;
-	width: 600px;
-}
-</style>
-
 </head>
 
-<h:body data-spy="scroll" data-offset="0">
+<h:body>
 
 
 	<div id="container1" class="center-block navbar-fixed-top">
 
 		<div class="col-md-8">
 
-			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
-				Sound 16</h1>
+			<h1 id="page-title">MAdelia Sound 16</h1>
 			<i> <span style="display: inline; color: grey; font-size: 120%">
-					* 3-4 Jun OHP </span>
+					* 3-4 Jun CBR </span>
 			</i>
 		</div>
 		<div class="col-md-4 center-block">
 			<p style="display: inline; color: grey">SESSION NAME:
 				#{helloBackingBean.name}</p>
-				<h:form><h:commandButton id="submit" class="btn btn-danger"
-					value="Logout" actionListener="#{helloBackingBean.logout}"/></h:form>
+			<h:form>
+				<h:commandButton id="submit" class="btn btn-danger" value="Logout"
+					actionListener="#{helloBackingBean.logout}" />
+			</h:form>
 		</div>
 
 
@@ -77,35 +64,34 @@
 	<br />
 
 
-	<div class="container">
+	<div class="container1">
+		<div class="col-md-6" id="left_col1">
 
-
-		<div id="row">
-			<div id="left_col">
-
-				<div>
-					<a href="radiohead.xhtml" class="btn btn-primary">Radiohead</a>
-				</div>
-				<br />
-				<div>
-					<a href="mogwai.xhtml" class="btn btn-primary">Mogwai</a>
-				</div>
-				<br />
-				<div>
-					<a href="ironmaiden.xhtml" class="btn btn-primary">Iron Maiden</a>
-				</div>
-				<br />
-				<div>
-					<a href="pearljam.xhtml" class="btn btn-primary">Pearl Jam</a>
-
-				</div>
+			<div>
+				<a href="radiohead.xhtml" class="btn btn-primary">Radiohead</a>
 			</div>
+			<br />
+			<div>
+				<a href="mogwai.xhtml" class="btn btn-primary">Mogwai</a>
+			</div>
+			<br />
+			<div>
+				<a href="ironmaiden.xhtml" class="btn btn-primary">Iron Maiden</a>
+			</div>
+			<br />
+			<div>
+				<a href="pearljam.xhtml" class="btn btn-primary">Pearl Jam</a>
+			</div>
+				<br />
+		</div>
 
-			<div id="right-col">
-
+		<div class="col-md-6" id="right_col1">
+			<div>
 				<a href="royalblood.xhtml" class="btn btn-primary">Royal Blood</a>
 			</div>
-			<br /> <a href="atdrivein.xhtml" class="btn btn-primary">At The
+			<br />
+			<div>
+			 <a href="atdrivein.xhtml" class="btn btn-primary">At The
 				Drive In</a>
 		</div>
 		<br />
@@ -115,22 +101,22 @@
 		<br />
 		<div>
 			<a href="dinosaurjr.xhtml" class="btn btn-primary">Dinosaur Jr</a>
-
 		</div>
+			<br />
 	</div>
+</div>
 
-	<div>
-		<div id="wrapbar" class="center-block" style="width: 75%"></div>
-	</div>
+	<div id="wrapbar" class="center-block"></div>
+
 
 
 	<script>
 		$(document).ready(function() {
 			//load partials
 			$("#menu").load("../banner/menuartista.html");
-			  $("#wrapbar2").load("../wrapbar/wrapbar2.html");
+			$("#wrapbar").load("../wrapbar/wrapbar.html");
 		});
 	</script>
- 
+
 </h:body>
 </html>
