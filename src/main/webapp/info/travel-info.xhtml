@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+<!-- BARRA LATERAL -->
+
+
+<link href="simple-sidebar.css" rel="stylesheet"></link>
+
+<link rel="stylesheet" type="text/css"
+	href="../assets/css/comic_zine.css" />
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+<link href="../assets/css/main.css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="styles.css"></script>
+<script src="scripts.js"></script>
+<script src="bootstrap.min.css"></script>
+<script src="bootstrap.min.js"></script>
+
+
+<style type="text/css" media="screen">
+#mydiv {
+	position: fixed;
+	top: 150px;
+	left: 50px;
+}
+
+a {
+	color: white;
+	text-align: center;
+}
+
+a:hover {
+	color: red;
+}
+
+h2 {
+	position: relative;
+}
+
+h2 span {
+	position: absolute;
+	top: -100px;
+}
+
+.stl {
+	background-color: white;
+	padding: 1%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+</style>
+</head>
+
+
+<h:body data-spy="scroll" data-offset="0">
+
+
+	<div id="container1" class="center-block navbar-fixed-top">
+
+		<div class="col-md-8">
+
+			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+				Sound 16</h1>
+			<i> <span style="display: inline; color: grey; font-size: 120%">
+					* 3-4 Jun OHP </span>
+			</i>
+		</div>
+		<div class="col-md-4 center-block">
+			<p style="display: inline; color: grey">SESSION NAME:
+				#{helloBackingBean.name}</p>
+			<h:form>
+				<h:commandButton id="submit" class="btn btn-danger" value="Logout"
+					actionListener="#{helloBackingBean.logout}" />
+			</h:form>
+		</div>
+
+
+
+
+	</div>
+
+
+	<div class="container" id="container2">
+
+		<div id="menu"></div>
+
+	</div>
+
+
+	<!--main-->
+	<div class="container"
+		style="background-color: #303030; margin-top: 30px">
+		<div class="row">
+			<!--left-->
+			<div id="mydiv" class="col-md-3" style="margin-left: 0px;">
+				<ul class="nav nav-stacked" id="sidebar">
+					<li><a href="#zero">TRAVELLING DIRECTIONS</a></li>
+					<li><a href="#one">COIMBRA</a></li>
+					<li><a href="#two">RULES</a></li>
+					<li><a href="#three">ENVIRONMENT</a></li>
+				</ul>
+			</div>
+			<!--/left-->
+
+			<!--right-->
+			<div class="col-md-9" style="float: right; margin-left: 5%">
+
+				<div class="stl">
+					<h2>
+						<span id="zero"></span>Travelling to Coimbra
+					</h2>
+
+					<div class="panel-body">
+						There are a number of different travel options for reaching
+						Coimbra, Portugal. Here we have put together details on how to get
+						to Coimbra by train, plain, bus and car. <br></br> <i
+							class="fa fa-plane"></i><br></br>If you are wondering how to get
+						to Coimbra by air, it is possible both via Lisbon and via Porto
+						airports. Coimbra is located slightly closer to Porto, however
+						there are more flights into Portela Airport in Lisbon, due to its
+						status as Portugal’s capital city. The onward journey from both is
+						relatively straightforward, with Porto to Coimbra taking around an
+						hour and Lisbon to Coimbra taking around two hours, either by road
+						or train. <br></br> <i class="fa fa-train"></i><br></br>
+						Travelling to Coimbra by train is simple. All trains between these
+						two cities stop at Coimbra en route, some on a fast service and
+						some on a slower-stopping service. When travelling to Coimbra by
+						train, whether you travel from Porto to Coimbra or from Lisbon to
+						Coimbra, your journey will bring you into Coimbra B station, which
+						is a short distance from the city centre. However, all
+						long-distance tickets include the five-minute ride to Coimbra A,
+						also known as “Baixa de Coimbra”, or downtown, which is located
+						right in the heart of the city centre. Travelling to Coimbra by
+						bus is a comfortable and cost-effective alternative to the train.
+						You can reach Coimbra by bus from destinations all over Portugal,
+						including the far northern and eastern borders with Spain and from
+						locations on the Algarve in the south. <br></br> <i
+							class="fa fa-bus"></i><br></br> If you choose to arrive in
+						Coimbra by bus, your journey will end at the bus station in Av.
+						Fernao de Magalhaes, just a 10-minute walk from the city centre
+						and all the major hotels. <br></br> <i class="fa fa-car"></i><br></br>
+						Travelling to Coimbra by car is a popular option for those looking
+						to explore the local area. If you are thinking of travelling to
+						Coimbra by car, take the A1 motorway which runs from Lisbon to
+						Porto and choose one of the Coimbra exits which will lead you into
+						the city centre.
+
+					</div>
+
+				</div>
+
+				<div class="stl">
+					<h2>
+						<span id="one"></span>Content
+					</h2>
+					<img class="img-responsive"
+						src="http://farm4.static.flickr.com/3459/3793962534_1d4262da3e_b.jpg"></img>
+					<div>
+						<strong>Coimbra - History</strong>
+						<p></p>
+						This city holds a special place in the hearts of all the
+						Portuguese. Rich in its history and is the oldest seat of learning
+						in Portugal with a University founded on the 13th of August in
+						1290 by King Dinis. This makes it one of the oldest in the world.
+						Coimbra was liberated from Moor occupation in 1064 and was then
+						developed as a town by the capable Conde de Sesmundo who was the
+						master here for 27 years. Six of Portugal’s Kings were born here
+						and between 1139 and 1256 it was the chosen capital of the
+						country. The name of this city during the Roman period was
+						Aeminium, and but it later developed under the influence of the
+						greater nearby town of Conimbriga. This latter place is now an
+						important archaeological site of great interest with a museum to
+						display the findings from the diggings. At first sight the town
+						appears more devoted to commerce than learning but the skyline
+						above the lower part of the city suggest its real purpose.
+					</div>
+
+				</div>
+
+				<div class="stl">
+					<h2>
+						<span id="two"></span>Section 2
+					</h2>
+					<img class="img-responsive"
+						src="http://static1.squarespace.com/static/54a1eb98e4b0cddb26d20c08/t/54bc76ebe4b0bf25db8ed462/1421637356850/cbcmusic-samanthasmith-oldtimeyindex"></img>
+				</div>
+
+				<div class="stl">
+					<h2>
+						<span id="three"></span>Environmental Commitment
+					</h2>
+					<div class="content width-640 floatRight">
+						<p>During the last decade, in which independent music has been
+							the driving force of Primavera Sound, we have experienced the
+							international awakening to a serious, global problem: the climate
+							change.</p>
+						<p>Being aware of the fact that life in modern society
+							inevitably leaves a carbon footprint, the organizers of the
+							festival are firmly determined to evaluate its environmental
+							impact and to make the decisions and implement the measures to
+							reduce this impact and to offset it.</p>
+						<p>Some of the initiatives undertaken during the previous
+							editions of the festival have shown us that, by making an effort
+							and putting in resources, it is possible to obtain positive
+							results in the reduction of our environmental impact.</p>
+						<p>Actions like selective waste collection, using of more
+							sustainable materials and reduction and inventory of green house
+							gas emissions, amongst other measures, will be added to the
+							festival’s organisation and logistics.</p>
+						<p>And audience, the real protagonist, will have a lot to say
+							in this domain. For this reason we have drawn up a short list of
+							good environmental practices that we encourage you to follow,
+							both during the festival and beyond. Help us to reduce the
+							environmental impact of the festival and to fight against climate
+							change.</p>
+						<p>1. Come on by foot, by bicycle or using the public
+							transport. It’s 100% effective and easy for the duration of the
+							festival!</p>
+						<p>2. Reuse your cup if you want to drink the same beverage</p>
+						<p>3. If you want to drink water use the drinking water
+							fountains. Thus avoiding excessive use of plastic bottles</p>
+						<p>4. Try to order and consume low packaged and/or locally
+							made products</p>
+						<p>5. Use the recycling bins to collect separately the waste.</p>
+						<p>6. Look after the trees and plants: they are our allies in
+							the fight against climate change. Use the special WC!</p>
+						<p>7. Don’t waste water</p>
+						<p>We count on you to make Primavera greener!</p>
+						<br></br> <br></br>
+
+
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion"
+											href="#collapse1"> Environmental Policy 1</a>
+									</h4>
+								</div>
+								<div id="collapse1" class="panel-collapse collapse in">
+									<div class="panel-body">Primavera Sound is aware of the
+										potential enviromental impact of its musical event activities,
+										and thus has established and organized an environmental policy
+										in order to: - Watch over the fulfilment of legal
+										requirements, meeting the environmental laws and other aspects
+										considered by the organisation. - Prevent the pollution of the
+										environmental aspects originated by the operation and
+										activities of the festival and study and promote all the
+										available measures to minimize the impact caused by other
+										agents with incidence in the music festival. The environmental
+										policy is developed through technical monitoring before,
+										during and after the event, allowing to establish the key
+										areas, action planning and executing, performance evaluation
+										and operational procedures checking. It's periodically checked
+										to fit into new demands and is communicated to the staff, the
+										suppliers and the audience.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion"
+											href="#collapse2"> Greenhouse gas offset scheme</a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse">
+									<div class="panel-body">During the 2011 edition several
+										aspects were studied in order to calculate the festival direct
+										and indirect greenhouse gas emissions. This inventory
+										estimated some 46 CO2-eq. metric tones. The organization
+										decided to offset these emissions through the carbon voluntary
+										market scheme, which derivates from the Kyoto Protocol, an
+										international volunteer nation treaty signed to fight against
+										the climate change. cerocoThe offset has been made through the
+										ZeroCO2 initiative, carried on by Fundación Ecología y
+										Desarrollo, funding a sustainable forest management project in
+										peruvian Amazonia.</div>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+
+
+				
+			
+
+			</div>
+			<!--/right-->
+		</div>
+		<!--/row-->
+	</div>
+	<!--/container-->
+
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+	<script>
+		$(document).ready(function() {
+			//load partials
+			$("#menu").load("../banner/menuindex.html");
+			$("#wrapbar").load("../wrapbar/wrapbar.html");
+		});
+	</script>
+</h:body>
+
+</html>
