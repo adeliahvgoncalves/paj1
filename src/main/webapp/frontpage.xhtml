@@ -1,29 +1,38 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
-<link rel="stylesheet"
+	<link rel="stylesheet"
 		href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
+		rel='stylesheet' type='text/css'></link>
 	<title>Front Page</title>
 </h:head>
-<h:body style="background-image:url(https://6bdcadffada1ee985d0c-934e50a17838192360463099fa57d899.ssl.cf2.rackcdn.com/2015/07/Wilco3.jpg)">
+<h:body
+	style="background-image:url(https://6bdcadffada1ee985d0c-934e50a17838192360463099fa57d899.ssl.cf2.rackcdn.com/2015/07/Wilco3.jpg)">
 	<h:form>
-	
+
 		<div align="center">
-		<i class="fa fa-forumbee" style="font-size:500%; color: black;"></i>
+			<i class="fa fa-forumbee" style="font-size: 500%; color: black;"></i>
 		</div>
-		<h2 style="text-align:center">Login</h2>
-		<h:inputText id="username"  title="My name is: " value="#{helloBackingBean.name}" required="true" requiredMessage="Error: A name is required." style="margin-left:45% ; width:10%" />
+		<p style="text-align: center">MAdelia Sound, S.A.</p>
+		<h2 style="text-align: center">Login</h2>
+		<h:inputText id="username" title="My name is: "
+			value="#{helloBackingBean.name}" required="true"
+			requiredMessage="Error: A name is required."
+			style="margin-left:45% ; width:10%" />
 		<p></p>
 		<div align="center">
-		<h:commandButton id="submit" value="Submit" action="index" />
-		<h:commandButton id="reset" value="Reset" type="reset" />
+			<h:commandButton id="submit" value="Submit" action="index" />
+			<h:commandButton id="reset" value="Reset" type="reset" />
 		</div>
 
 	</h:form>
 	<div class="messagecolor">
-		<h:messages showSummary="true" showDetail="false" errorStyle="color: #d20005" infoStyle="color: blue" />
+		<h:messages showSummary="true" showDetail="false"
+			errorStyle="color: #d20005" infoStyle="color: blue" />
 	</div>
 </h:body>
 </html>
