@@ -4,7 +4,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html">
 <head>
-<meta charset="utf-8"></meta>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
@@ -76,6 +76,8 @@ a:hover {
 		<div class="col-md-4 center-block">
 			<p style="display: inline; color: grey">SESSION NAME:
 				#{helloBackingBean.name}</p>
+				<h:form><h:commandButton id="submit" class="btn btn-danger"
+					value="Logout" actionListener="#{helloBackingBean.logout}"/></h:form>
 		</div>
 
 
@@ -181,10 +183,6 @@ a:hover {
   <div id="wrapbar2" class="center-block" style="width:75%"></div>
 </div>
 
-
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			//load partials

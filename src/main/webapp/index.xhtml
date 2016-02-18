@@ -5,9 +5,8 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
 
-	<meta charset="utf-8"></meta>
+	<!--  <meta charset="utf-8"></meta>-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-
 
 	<script src="assets/js/jquery.min.js"></script>
 
@@ -16,8 +15,8 @@
 
 
 	<link rel="stylesheet" type="text/css" href="assets/css/comic_zine.css"></link>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css"
-		charset="utf-8"></link>
+	<!-- <link rel="stylesheet" href="assets/stylesheet.css" type="text/css"
+		charset="utf-8"></link> -->
 	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
 		rel='stylesheet' type='text/css'></link>
 	<link rel="stylesheet" href="assets/css/bootstrap.css"></link>
@@ -49,6 +48,8 @@
 			</div>
 			 <div class="col-md-4 center-block">	
 		<p style="display: inline;color: grey">SESSION NAME: #{helloBackingBean.name}</p>
+		<h:form><h:commandButton id="submit" class="btn btn-danger"
+					value="Logout" actionListener="#{helloBackingBean.logout}"/></h:form>
 </div>
 				
 		
@@ -83,7 +84,7 @@
 			<div class="item active">
 				<iframe width="950px" height="400px"
 					src="https://www.youtube.com/embed/GrIRcB0x4iU" frameborder="0"
-					allowfullscreen="true"></iframe>
+					></iframe>
 			</div>
 
 			<div class="item">
@@ -136,8 +137,8 @@
 
 
 
-	<script src="../assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 	<script>
 		$(document).ready(function() {
 			//load partials

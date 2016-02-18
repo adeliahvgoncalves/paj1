@@ -12,7 +12,16 @@ import javax.inject.Named;
 @SessionScoped
 public class HelloBackingBean implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
+
+	// public String logout() {
+	// FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+	// return "/home.xhtml?faces-redirect=true";
+	// }
 
 	public void logout() throws IOException {
 		ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
