@@ -6,6 +6,13 @@
 	border-top: 4px solid #eee;
 }
 
+#reta2 {
+	margin: 20px auto;
+	border: 0;
+	width: 50%;
+border-top: 1px solid grey;
+}
+
 #accordion {
 	width: 75%;
 	margin-bottom: 140px;
@@ -130,11 +137,17 @@ a.btn.btn-primary {
 	height: auto;
 }
 
-.table-condensed TD {
-	font-size: 15pt;
+#tableDisc > tr {
+	
+	text-align:center;
 }
 
-.table-condensed TH {
+#tableDisc > td {
+	font-size: 15pt;
+	text-align:center;
+}
+
+#tableDisc > th {
 	font-size: 17pt;
 	text-align:center;
 }
@@ -331,19 +344,20 @@ a:hover {
 #containerNews{
 	margin-top: 50px; 
 	margin-bottom: 200px;
-	 padding: 0px"
+	 padding: 0px;
 }
 
 #containerNewsCol{
 	margin-bottom: 50px;
-	 padding: 0px"
+	 padding: 0px;
 }
 
-.table-condensed{
-align:center;
-
+#ulno{
+	list-style-type:none;
 }
 
-#welltext{
-text-align:center;
+#tableDisc{
+	width:100%;
 }
+
+
