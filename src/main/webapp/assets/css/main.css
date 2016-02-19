@@ -361,4 +361,19 @@ table#tableDisc{
 		text-align:center;
 }
 
+#mydiv{
+	
+		width:18%;
+}
+
+#mydiv2{
+	float: right;
+	 margin-left: 5%
+}
+
+#containerInfo{
+	background-color:#909090;
+	margin-top:30px;
+	width: 75%;
+}
 
