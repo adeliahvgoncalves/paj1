@@ -230,6 +230,8 @@ h1 {
 	color: #ff254b;
 }
 
+
+
 h3 {
 	font-size: 26px;
 	color: grey;
@@ -238,6 +240,11 @@ h3 {
 p, li {
 	font-size: 16px;
 	color: black;
+}
+
+#h2OP{
+	color: #ff254b;
+	 text-align: center;
 }
 
 #myCarousel2 p {
@@ -324,4 +331,12 @@ a:hover {
 #containerNewsCol{
 	margin-bottom: 50px;
 	 padding: 0px"
+}
+
+.table-condensed{
+align:center;
+}
+
+#welltext{
+text-align:center;
 }
