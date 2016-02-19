@@ -137,19 +137,17 @@ a.btn.btn-primary {
 	height: auto;
 }
 
-#tableDisc > tr {
-	
-	text-align:center;
-}
+
 
 #tableDisc > td {
 	font-size: 15pt;
-	text-align:center;
+text-align: center;
 }
 
 #tableDisc > th {
 	font-size: 17pt;
-	text-align:center;
+	text-align: center;
+	
 }
 
 .col-sm-8 {
@@ -356,8 +354,11 @@ a:hover {
 	list-style-type:none;
 }
 
-#tableDisc{
-	width:100%;
+
+
+table#tableDisc{
+	
+		text-align:center;
 }
 
 
