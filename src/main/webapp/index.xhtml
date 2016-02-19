@@ -6,11 +6,13 @@
 <h:head>
 
 	<!--  <meta charset="utf-8"></meta>-->
-	
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
 	<script src="assets/js/jquery.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/comic_zine.css"></link>
+	<!-- <link rel="stylesheet" href="assets/stylesheet.css" type="text/css"
+		charset="utf-8"></link> -->
 	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz'
 		rel='stylesheet' type='text/css'></link>
 	<link rel="stylesheet" href="assets/css/bootstrap.css"></link>
@@ -24,18 +26,21 @@
 	<link rel="stylesheet" href="assets/css/main.css"></link>
 
 
+
+
 </h:head>
 
-<h:body>
+<h:body data-spy="scroll" data-offset="0">
 
 
-	<div id="container1" class=" navbar-fixed-top">
+	<div id="container1" class="center-block navbar-fixed-top">
 
 		<div class="col-md-8">
 
-			<h1 id="page-title">MAdelia Sound 16</h1>
+			<h1 id="page-title" style="display: inline; color: #CC6666">MAdelia
+				Sound 16</h1>
 			<i> <span style="display: inline; color: grey; font-size: 120%">
-					* 3-4 Jun CBR </span>
+					* 3-4 Jun OHP </span>
 			</i>
 		</div>
 		<div class="col-md-4 center-block">
@@ -47,6 +52,9 @@
 			</h:form>
 		</div>
 
+
+
+
 	</div>
 
 
@@ -57,17 +65,17 @@
 	</div>
 
 
-	<div class="container size1">
+	<div class="container size">
 
 		<div id="carrouselbegin"></div>
 
 	</div>
 
 
-	<div class="container size" id="containerS1">
+	<div class="container size" style="margin-top: 50px; margin-bottom: 200px; padding: 0px">
 
 		<div class="row">
-			<div class="col-md-8" id="columnSpe">
+			<div class="col-md-8" style="margin-bottom: 50px; padding: 0px">
 
 				<div id="news-3"></div>
 
@@ -76,7 +84,7 @@
 			<div class="col-md-4">
 
 
-				<iframe style="height:360px"
+				<iframe height="400px"
 					src="https://embed.spotify.com/?uri=spotify%3Auser%3Aadeliahvgoncalves%3Aplaylist%3A1n3ef98nM9cOzaqyBd9xzg"
 					frameborder="0"></iframe>
 			</div>
@@ -85,8 +93,16 @@
 
 
 
-		<div id="wrapbar" class="center-block"></div>
-	
+
+
+
+
+	<div>
+		<div id="wrapbar" class="center-block" style="width: 75%"></div>
+	</div>
+
+
+
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
@@ -134,6 +150,7 @@
 			console.log(template);
 
 		};
+		
 	</script>
 
 
