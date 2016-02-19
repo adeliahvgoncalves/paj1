@@ -305,3 +305,23 @@ a:hover {
 	padding:0px;
 }
 
+#title2{
+	display: inline; 
+	color: grey; 
+	font-size: 120%;
+}
+#session{
+	display: inline;
+	 color: grey;
+}
+
+#containerNews{
+	margin-top: 50px; 
+	margin-bottom: 200px;
+	 padding: 0px"
+}
+
+#containerNewsCol{
+	margin-bottom: 50px;
+	 padding: 0px"
+}
