@@ -228,13 +228,19 @@ a.btn.btn-primary {
 
 h1 {
 	color: #ff254b;
+	text-align: center;
 }
 
+h2 {
+	
+	text-align: center;
+}
 
 
 h3 {
 	font-size: 26px;
 	color: grey;
+	text-align: center;
 }
 
 p, li {
