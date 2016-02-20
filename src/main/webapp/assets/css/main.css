@@ -139,14 +139,15 @@ a.btn.btn-primary {
 
 
 
-#tableDisc > td {
-	font-size: 15pt;
-text-align: center;
+td {
+	font-size: 19px;
+
 }
 
-#tableDisc > th {
-	font-size: 17pt;
-	text-align: center;
+th {
+	font-size: 22px;
+	text-align:center;
+	
 	
 }
 
@@ -354,12 +355,11 @@ a:hover {
 	list-style-type:none;
 }
 
-
-
-table#tableDisc{
-	
-		text-align:center;
+#welltext{
+text-align:center;
 }
+
+
 
 #mydiv{
 	
@@ -377,3 +377,6 @@ table#tableDisc{
 	width: 75%;
 }
 
+#tableMusic{
+	width:100%;
+}
